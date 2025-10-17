@@ -14,6 +14,8 @@ import {
   PushNotificationSchema, 
   ActionPerformed 
 } from '@capacitor/push-notifications';
+import { BiometricAuth, BiometryType, BiometryError } from '@aparajita/capacitor-biometric-auth';
+import { Share, ShareOptions } from '@capacitor/share';
 
 // Определение платформы
 export const isNative = Capacitor.isNativePlatform();
@@ -344,6 +346,208 @@ export async function selectionHaptic() {
   } catch (error) {
     console.error('[Haptics] Selection haptic error:', error);
   }
+}
+
+// ============================================
+// БИОМЕТРИЧЕСКАЯ АУТЕНТИФИКАЦИЯ
+// ============================================
+
+/**
+ * Проверка доступности биометрии на устройстве
+ */
+export async function isBiometricAvailable(): Promise<{
+  available: boolean;
+  type: 'faceId' | 'touchId' | 'none';
+}> {
+  if (!isNative) {
+    return { available: false, type: 'none' };
+  }
+
+  try {
+    const result = await BiometricAuth.checkBiometry();
+    console.log('[Biometric] Check result:', result);
+    
+    if (!result.isAvailable) {
+      return { available: false, type: 'none' };
+    }
+
+    // Определяем тип биометрии
+    let type: 'faceId' | 'touchId' | 'none' = 'none';
+    if (result.biometryType === BiometryType.faceId) {
+      type = 'faceId';
+    } else if (result.biometryType === BiometryType.touchId || 
+               result.biometryType === BiometryType.fingerprint) {
+      type = 'touchId';
+    }
+
+    return {
+      available: true,
+      type
+    };
+  } catch (error) {
+    console.error('[Biometric] Availability check error:', error);
+    return { available: false, type: 'none' };
+  }
+}
+
+/**
+ * Аутентификация через Face ID / Touch ID
+ */
+export async function authenticateWithBiometric(reason: string = 'Войдите в приложение'): Promise<{
+  success: boolean;
+  error?: string;
+}> {
+  if (!isNative) {
+    console.warn('[Biometric] Not available on web');
+    return { success: false, error: 'Not available on web' };
+  }
+
+  try {
+    // Проверяем доступность
+    const { available } = await isBiometricAvailable();
+    if (!available) {
+      return { success: false, error: 'Биометрия недоступна' };
+    }
+
+    // Запрашиваем аутентификацию
+    await BiometricAuth.authenticate({
+      reason,
+      cancelTitle: 'Отмена',
+      allowDeviceCredential: true, // Разрешить использовать пароль устройства
+      iosFallbackTitle: 'Использовать пароль',
+      androidTitle: 'Вход',
+      androidSubtitle: reason,
+      androidConfirmationRequired: false,
+    });
+
+    console.log('[Biometric] Authentication success');
+    await notificationHaptic(); // Haptic при успехе
+    return { success: true };
+
+  } catch (error: any) {
+    console.error('[Biometric] Authentication error:', error);
+    
+    // Обработка разных типов ошибок
+    let errorMessage = 'Ошибка аутентификации';
+    
+    if (error.code === BiometryError.userCancel) {
+      errorMessage = 'Отменено пользователем';
+    } else if (error.code === BiometryError.authenticationFailed) {
+      errorMessage = 'Не удалось распознать';
+    } else if (error.code === BiometryError.biometryLockout) {
+      errorMessage = 'Слишком много попыток';
+    } else if (error.code === BiometryError.biometryNotAvailable) {
+      errorMessage = 'Биометрия недоступна';
+    }
+
+    return { success: false, error: errorMessage };
+  }
+}
+
+// ============================================
+// SHARE ФУНКЦИОНАЛ
+// ============================================
+
+/**
+ * Поделиться текстом или данными
+ */
+export async function shareContent(options: {
+  title?: string;
+  text?: string;
+  url?: string;
+  dialogTitle?: string;
+}): Promise<boolean> {
+  if (!isNative) {
+    // Fallback для веба - можно использовать Web Share API
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: options.title,
+          text: options.text,
+          url: options.url,
+        });
+        return true;
+      } catch (error) {
+        console.error('[Share] Web share error:', error);
+        return false;
+      }
+    }
+    console.warn('[Share] Not available on this platform');
+    return false;
+  }
+
+  try {
+    const shareOptions: ShareOptions = {
+      title: options.title,
+      text: options.text,
+      url: options.url,
+      dialogTitle: options.dialogTitle || 'Поделиться',
+    };
+
+    await Share.share(shareOptions);
+    await selectionHaptic(); // Haptic при открытии share sheet
+    console.log('[Share] Content shared successfully');
+    return true;
+  } catch (error) {
+    console.error('[Share] Share error:', error);
+    return false;
+  }
+}
+
+/**
+ * Экспорт данных в CSV и шаринг
+ */
+export async function shareDataAsCSV(
+  data: any[],
+  filename: string = 'export.csv',
+  title: string = 'Экспорт данных'
+): Promise<boolean> {
+  try {
+    // Конвертируем данные в CSV
+    const csvContent = convertToCSV(data);
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+
+    // Создаем временную ссылку для скачивания
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+
+    console.log('[Share] CSV exported successfully');
+    await notificationHaptic();
+    return true;
+  } catch (error) {
+    console.error('[Share] CSV export error:', error);
+    return false;
+  }
+}
+
+/**
+ * Вспомогательная функция для конвертации в CSV
+ */
+function convertToCSV(data: any[]): string {
+  if (!data || data.length === 0) return '';
+
+  const headers = Object.keys(data[0]);
+  const csvRows = [
+    headers.join(','), // Заголовки
+    ...data.map(row => 
+      headers.map(header => {
+        const value = row[header];
+        // Экранируем запятые и кавычки
+        if (typeof value === 'string' && (value.includes(',') || value.includes('"'))) {
+          return `"${value.replace(/"/g, '""')}"`;
+        }
+        return value;
+      }).join(',')
+    )
+  ];
+
+  return csvRows.join('\n');
 }
 
 

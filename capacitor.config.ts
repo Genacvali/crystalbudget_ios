@@ -19,12 +19,10 @@ const config: CapacitorConfig = {
   // Плагины
   plugins: {
     SplashScreen: {
-      launchShowDuration: 2000,
-      backgroundColor: "#0f172a",
+      launchShowDuration: 0,
       launchAutoHide: true,
-      iosLaunchShowDuration: 2000,
-      showSpinner: false,
-      spinnerColor: "#ffffff"
+      backgroundColor: "#000000",
+      showSpinner: false
     },
     
     StatusBar: {

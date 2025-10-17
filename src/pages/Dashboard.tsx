@@ -16,7 +16,7 @@ import { QuickGuide } from "@/components/QuickGuide";
 import { TelegramGuide } from "@/components/TelegramGuide";
 import { DashboardSkeleton } from "@/components/DashboardSkeleton";
 import { EmptyState } from "@/components/EmptyState";
-// import { PullToRefresh } from "@/components/PullToRefresh";
+import { PullToRefresh } from "@/components/PullToRefresh";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
@@ -443,7 +443,7 @@ const Dashboard = () => {
     );
   }
   return <Layout selectedDate={selectedDate} onDateChange={setSelectedDate}>
-      {/* <PullToRefresh onRefresh={loadData}> */}
+      <PullToRefresh onRefresh={loadData}>
         <div className="space-y-4 sm:space-y-6">
         {/* Summary Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
@@ -835,7 +835,7 @@ const Dashboard = () => {
           </TabsContent>
         </Tabs>
       </div>
-      {/* </PullToRefresh> */}
+      </PullToRefresh>
 
       <IncomeDialog open={incomeDialogOpen} onOpenChange={setIncomeDialogOpen} incomeSources={incomeSources} onSave={handleAddIncome} onSourceCreated={loadData} />
 

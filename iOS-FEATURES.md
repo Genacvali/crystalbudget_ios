@@ -220,14 +220,20 @@ npm run ios:sync
 
 ## Что дальше?
 
-### Можно добавить:
-- [ ] Context Menu (long press меню)
+### ✅ Уже добавлено (НОВОЕ!):
+- ✅ **Face ID / Touch ID аутентификация** - см. `iOS-NEW-FEATURES.md`
+- ✅ **Share функционал** - нативный Share Sheet для экспорта
+- ✅ **Action Sheets** - iOS-стиль модальные окна
+- ✅ **Context Menu** - long press меню
+- ✅ **Pull to Refresh** - активирован на Dashboard
+- ✅ **Расширенный Haptic Feedback** - во всех новых компонентах
+
+### Можно добавить в будущем:
 - [ ] Quick Actions (3D Touch на иконке)
 - [ ] Share Extension
 - [ ] Today Widget
 - [ ] App Clips
 - [ ] Siri Shortcuts
-- [ ] Face ID / Touch ID аутентификация
 - [ ] iCloud синхронизация
 
 ## Известные проблемы

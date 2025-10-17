@@ -26,20 +26,7 @@ try {
   
   console.log(`✅ Updated package.json: ${oldVersion} → ${newVersion}`);
   
-  // Update service worker
-  const swPath = path.join(__dirname, '..', 'public', 'sw.js');
-  let swContent = fs.readFileSync(swPath, 'utf8');
-  
-  // Replace cache name with new version
-  const newCacheName = `crystal-fin-buddy-v${newVersion.replace(/\./g, '')}`;
-  swContent = swContent.replace(
-    /const CACHE_NAME = 'crystal-fin-buddy-v\d+';/,
-    `const CACHE_NAME = '${newCacheName}';`
-  );
-  
-  fs.writeFileSync(swPath, swContent);
-  
-  console.log(`✅ Updated sw.js cache version to ${newCacheName}`);
+  // Service worker removed for iOS-only app
   console.log(`\n🎉 New version: ${newVersion}`);
   
   process.exit(0);

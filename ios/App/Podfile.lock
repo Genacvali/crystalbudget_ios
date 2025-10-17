@@ -1,4 +1,6 @@
 PODS:
+  - AparajitaCapacitorBiometricAuth (9.0.0):
+    - Capacitor
   - Capacitor (7.4.3):
     - CapacitorCordova
   - CapacitorApp (7.1.0):
@@ -26,6 +28,7 @@ PODS:
   - IONFilesystemLib (1.0.1)
 
 DEPENDENCIES:
+  - "AparajitaCapacitorBiometricAuth (from `../../node_modules/@aparajita/capacitor-biometric-auth`)"
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorApp (from `../../node_modules/@capacitor/app`)"
   - "CapacitorCamera (from `../../node_modules/@capacitor/camera`)"
@@ -44,6 +47,8 @@ SPEC REPOS:
     - IONFilesystemLib
 
 EXTERNAL SOURCES:
+  AparajitaCapacitorBiometricAuth:
+    :path: "../../node_modules/@aparajita/capacitor-biometric-auth"
   Capacitor:
     :path: "../../node_modules/@capacitor/ios"
   CapacitorApp:
@@ -70,6 +75,7 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/status-bar"
 
 SPEC CHECKSUMS:
+  AparajitaCapacitorBiometricAuth: 77be369942778adf29e20893caa5c0a75e5936fa
   Capacitor: 28d6c01026a9a3f7156529498ec1f389a2a28dbc
   CapacitorApp: 26587c2ce485d88ddb39adb21cac64f8e481afe3
   CapacitorCamera: f9e54db0a18bb218a8dc360907d63aaefe9209ff
@@ -84,6 +90,6 @@ SPEC CHECKSUMS:
   CapacitorStatusBar: 0659ddc7b1713764a05831463d215b177a15d054
   IONFilesystemLib: 89258b8e3e85465da93127d25d7ce37f977e8a6f
 
-PODFILE CHECKSUM: 8659806a73b23399665e587de37988980139ef1e
+PODFILE CHECKSUM: 497be63576c80e212270a6f782ea8e3e5b573286
 
 COCOAPODS: 1.16.2
