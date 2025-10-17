@@ -1,0 +1,298 @@
+/* iOS Native Styles */
+
+/* SF Pro Display font (iOS нативный шрифт) */
+@supports (-webkit-touch-callout: none) {
+  :root {
+    --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* iOS-стиль кнопок */
+.ios-button {
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: transform 0.1s, opacity 0.2s;
+}
+
+.ios-button:active {
+  transform: scale(0.97);
+  opacity: 0.8;
+}
+
+/* iOS-стиль карточек */
+.ios-card {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios-card {
+    background: rgba(28, 28, 30, 0.8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* iOS-стиль инпутов */
+.ios-input {
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 17px;
+  line-height: 22px;
+  background: rgba(120, 120, 128, 0.12);
+  border: none;
+  transition: background 0.2s;
+}
+
+.ios-input:focus {
+  background: rgba(120, 120, 128, 0.16);
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios-input {
+    background: rgba(118, 118, 128, 0.24);
+  }
+
+  .ios-input:focus {
+    background: rgba(118, 118, 128, 0.32);
+  }
+}
+
+/* iOS-стиль списков */
+.ios-list {
+  background: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ios-list-item {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.04);
+  padding: 12px 16px;
+  transition: background 0.2s;
+}
+
+.ios-list-item:active {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.ios-list-item:last-child {
+  border-bottom: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios-list-item {
+    background: rgba(28, 28, 30, 0.8);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .ios-list-item:active {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* iOS-стиль навигации */
+.ios-navbar {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios-navbar {
+    background: rgba(28, 28, 30, 0.8);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+}
+
+/* iOS-стиль bottom sheet */
+.ios-sheet {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios-sheet {
+    background: rgba(28, 28, 30, 0.95);
+  }
+}
+
+/* iOS-стиль handle для sheet */
+.ios-sheet-handle {
+  width: 36px;
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(60, 60, 67, 0.3);
+  margin: 8px auto 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios-sheet-handle {
+    background: rgba(235, 235, 245, 0.3);
+  }
+}
+
+/* iOS-стиль разделителей */
+.ios-divider {
+  height: 0.5px;
+  background: rgba(60, 60, 67, 0.36);
+  margin: 8px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios-divider {
+    background: rgba(84, 84, 88, 0.65);
+  }
+}
+
+/* iOS-стиль badge */
+.ios-badge {
+  background: #FF3B30;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 2px 6px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* iOS-стиль toggle/switch */
+.ios-switch {
+  width: 51px;
+  height: 31px;
+  border-radius: 16px;
+  background: rgba(120, 120, 128, 0.16);
+  position: relative;
+  transition: background 0.2s;
+}
+
+.ios-switch.active {
+  background: #34C759;
+}
+
+.ios-switch-handle {
+  width: 27px;
+  height: 27px;
+  border-radius: 14px;
+  background: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), 0 3px 1px rgba(0, 0, 0, 0.06);
+}
+
+.ios-switch.active .ios-switch-handle {
+  transform: translateX(20px);
+}
+
+/* iOS-стиль haptic feedback indicator */
+@keyframes ios-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.98);
+  }
+}
+
+.ios-haptic-feedback {
+  animation: ios-pulse 0.2s ease-in-out;
+}
+
+/* iOS-стиль для скроллбаров */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* iOS-стиль для selection */
+::selection {
+  background: rgba(0, 122, 255, 0.2);
+}
+
+/* iOS-стиль модальных окон */
+.ios-modal {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.16);
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios-modal {
+    background: rgba(28, 28, 30, 0.95);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.48);
+  }
+}
+
+/* iOS-стиль для активных элементов */
+.ios-active-scale {
+  transition: transform 0.1s;
+}
+
+.ios-active-scale:active {
+  transform: scale(0.96);
+}
+
+/* iOS-стиль для текста */
+.ios-text-primary {
+  color: #000;
+}
+
+.ios-text-secondary {
+  color: rgba(60, 60, 67, 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios-text-primary {
+    color: #FFF;
+  }
+
+  .ios-text-secondary {
+    color: rgba(235, 235, 245, 0.6);
+  }
+}
+
+/* iOS-стиль для плавных переходов */
+.ios-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* iOS-стиль для blur эффектов */
+.ios-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* iOS-стиль для теней */
+.ios-shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios-shadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
