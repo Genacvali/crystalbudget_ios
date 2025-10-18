@@ -1,4 +1,5 @@
 import SwiftUI
+import Charts
 
 struct TransactionsView: View {
     @EnvironmentObject var coreDataManager: CoreDataManager

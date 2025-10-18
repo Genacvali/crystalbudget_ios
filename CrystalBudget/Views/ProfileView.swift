@@ -1,4 +1,5 @@
 import SwiftUI
+import Charts
 
 struct ProfileView: View {
     @EnvironmentObject var authManager: AuthenticationManager

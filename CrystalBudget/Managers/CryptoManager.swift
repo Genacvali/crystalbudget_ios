@@ -1,6 +1,7 @@
 import Foundation
 import Security
 import CryptoKit
+import SwiftUI
 
 class CryptoManager {
     static let shared = CryptoManager()

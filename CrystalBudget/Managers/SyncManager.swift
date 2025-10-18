@@ -1,5 +1,6 @@
 import Foundation
 import BackgroundTasks
+import SwiftUI
 import UserNotifications
 import Combine
 

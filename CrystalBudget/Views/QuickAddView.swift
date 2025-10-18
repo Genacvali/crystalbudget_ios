@@ -1,4 +1,5 @@
 import SwiftUI
+import Charts
 
 struct QuickAddView: View {
     @Environment(\.dismiss) private var dismiss

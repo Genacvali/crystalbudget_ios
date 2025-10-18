@@ -1,5 +1,6 @@
 import SwiftUI
 import VisionKit
+import Charts
 import Vision
 
 struct ReceiptScannerView: UIViewControllerRepresentable {

@@ -1,4 +1,5 @@
 import SwiftUI
+import Charts
 
 struct OnboardingView: View {
     @EnvironmentObject var authManager: AuthenticationManager

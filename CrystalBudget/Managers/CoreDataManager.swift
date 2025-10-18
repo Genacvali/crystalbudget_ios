@@ -1,4 +1,5 @@
 import CoreData
+import SwiftUI
 import Foundation
 
 // MARK: - Core Data Model

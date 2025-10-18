@@ -2,6 +2,7 @@ import Foundation
 import LocalAuthentication
 import Security
 import Combine
+import SwiftUI
 
 class AuthenticationManager: ObservableObject {
     @Published var isAuthenticated = false

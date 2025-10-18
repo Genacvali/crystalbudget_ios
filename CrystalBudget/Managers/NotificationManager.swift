@@ -1,5 +1,6 @@
 import Foundation
 import UserNotifications
+import SwiftUI
 import UIKit
 
 class NotificationManager: NSObject, ObservableObject {

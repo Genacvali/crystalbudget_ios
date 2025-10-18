@@ -1,4 +1,5 @@
 import XCTest
+import SwiftUI
 
 final class CrystalBudgetUITests: XCTestCase {
     

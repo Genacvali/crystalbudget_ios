@@ -17,40 +17,54 @@
 		1A0000102A00000000000001 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000112A00000000000001 /* DashboardView.swift */; };
 		1A0000122A00000000000001 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000132A00000000000001 /* TransactionsView.swift */; };
 		1A0000142A00000000000001 /* BudgetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000152A00000000000001 /* BudgetsView.swift */; };
-		1A0000162A00000000000001 /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000172A00000000000001 /* ReportsView.swift */; };
+		1A0000162A00000000000001 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000172A00000000000001 /* ChartsView.swift */; };
 		1A0000182A00000000000001 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000192A00000000000001 /* ProfileView.swift */; };
-		1A00001A2A00000000000001 /* TransactionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001B2A00000000000001 /* TransactionCard.swift */; };
-		1A00001C2A00000000000001 /* BudgetProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001D2A00000000000001 /* BudgetProgressView.swift */; };
-		1A00001E2A00000000000001 /* QuickAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001F2A00000000000001 /* QuickAddView.swift */; };
-		1A0000202A00000000000001 /* CrystalBudgetWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000212A00000000000001 /* CrystalBudgetWidgetBundle.swift */; };
-		1A0000222A00000000000001 /* CrystalBudgetWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000232A00000000000001 /* CrystalBudgetWidget.swift */; };
-		1A0000242A00000000000001 /* WidgetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000252A00000000000001 /* WidgetTimelineProvider.swift */; };
-		1A0000262A00000000000001 /* AddExpenseIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000272A00000000000001 /* AddExpenseIntent.swift */; };
-		1A0000282A00000000000001 /* ShowBalanceIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000292A00000000000001 /* ShowBalanceIntent.swift */; };
-		1A00002A2A00000000000001 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002B2A00000000000001 /* SyncManager.swift */; };
-		1A00002C2A00000000000001 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002D2A00000000000001 /* NotificationManager.swift */; };
-		1A00002E2A00000000000001 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002F2A00000000000001 /* CryptoManager.swift */; };
-		1A0000302A00000000000001 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000312A00000000000001 /* ChartsView.swift */; };
-		1A0000322A00000000000001 /* ReceiptScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000332A00000000000001 /* ReceiptScannerView.swift */; };
-		1A0000342A00000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000352A00000000000001 /* SettingsView.swift */; };
-		1A0000362A00000000000001 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000372A00000000000001 /* OnboardingView.swift */; };
-		1A0000382A00000000000001 /* CrystalBudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000392A00000000000001 /* CrystalBudgetTests.swift */; };
-		1A00003A2A00000000000001 /* CrystalBudgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00003B2A00000000000001 /* CrystalBudgetUITests.swift */; };
+		1A00001A2A00000000000001 /* QuickAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001B2A00000000000001 /* QuickAddView.swift */; };
+		1A00001C2A00000000000001 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001D2A00000000000001 /* OnboardingView.swift */; };
+		1A00001E2A00000000000001 /* ReceiptScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001F2A00000000000001 /* ReceiptScannerView.swift */; };
+		1A0000202A00000000000001 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000212A00000000000001 /* SyncManager.swift */; };
+		1A0000222A00000000000001 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000232A00000000000001 /* NotificationManager.swift */; };
+		1A0000242A00000000000001 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000252A00000000000001 /* CryptoManager.swift */; };
+		1A0000262A00000000000001 /* AppStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000272A00000000000001 /* AppStyles.swift */; };
+		1A0000282A00000000000001 /* AppTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000292A00000000000001 /* AppTypes.swift */; };
+		1A00002A2A00000000000001 /* CoreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002B2A00000000000001 /* CoreDataExtensions.swift */; };
+		1A00002C2A00000000000001 /* AppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002D2A00000000000001 /* AppIntents.swift */; };
+		1A00002E2A00000000000001 /* AddExpenseIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002F2A00000000000001 /* AddExpenseIntent.swift */; };
+		1A0000302A00000000000001 /* ShowBalanceIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000312A00000000000001 /* ShowBalanceIntent.swift */; };
+		1A0000322A00000000000001 /* CompletePullToRefreshSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000332A00000000000001 /* CompletePullToRefreshSystem.swift */; };
+		1A0000342A00000000000001 /* PullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000352A00000000000001 /* PullToRefreshView.swift */; };
+		1A0000362A00000000000001 /* AdvancedPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000372A00000000000001 /* AdvancedPullToRefreshView.swift */; };
+		1A0000382A00000000000001 /* EnhancedTransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000392A00000000000001 /* EnhancedTransactionListView.swift */; };
+		1A00003A2A00000000000001 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1A00003B2A00000000000001 /* PrivacyInfo.xcprivacy */; };
+		1A00003C2A00000000000001 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A00003D2A00000000000001 /* Info.plist */; };
+		1A00003E2A00000000000001 /* CrystalBudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00003F2A00000000000001 /* CrystalBudgetTests.swift */; };
+		1A0000402A00000000000001 /* CrystalBudgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000412A00000000000001 /* CrystalBudgetUITests.swift */; };
+		1A0000422A00000000000001 /* CrystalBudgetWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000432A00000000000001 /* CrystalBudgetWidgetBundle.swift */; };
+		1A0000442A00000000000001 /* CrystalBudgetWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000452A00000000000001 /* CrystalBudgetWidget.swift */; };
+		1A0000462A00000000000001 /* WidgetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000472A00000000000001 /* WidgetTimelineProvider.swift */; };
+		1A0000482A00000000000001 /* EnhancedWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000492A00000000000001 /* EnhancedWidgetViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1A00003C2A00000000000001 /* PBXContainerItemProxy */ = {
+		1A00004A2A00000000000001 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1A00003D2A00000000000001 /* Project object */;
+			containerPortal = 1A00004B2A00000000000001 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1A00003E2A00000000000001;
+			remoteGlobalIDString = 1A0000552A00000000000001;
 			remoteInfo = CrystalBudget;
 		};
-		1A00003F2A00000000000001 /* PBXContainerItemProxy */ = {
+		1A00004C2A00000000000001 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1A00003D2A00000000000001 /* Project object */;
+			containerPortal = 1A00004B2A00000000000001 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1A0000402A00000000000001;
+			remoteGlobalIDString = 1A0000552A00000000000001;
+			remoteInfo = CrystalBudget;
+		};
+		1A00004D2A00000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A00004B2A00000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A0000552A00000000000001;
 			remoteInfo = CrystalBudget;
 		};
 /* End PBXContainerItemProxy section */
@@ -66,54 +80,61 @@
 		1A0000112A00000000000001 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		1A0000132A00000000000001 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
 		1A0000152A00000000000001 /* BudgetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetsView.swift; sourceTree = "<group>"; };
-		1A0000172A00000000000001 /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
+		1A0000172A00000000000001 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		1A0000192A00000000000001 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		1A00001B2A00000000000001 /* TransactionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCard.swift; sourceTree = "<group>"; };
-		1A00001D2A00000000000001 /* BudgetProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetProgressView.swift; sourceTree = "<group>"; };
-		1A00001F2A00000000000001 /* QuickAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddView.swift; sourceTree = "<group>"; };
-		1A0000212A00000000000001 /* CrystalBudgetWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalBudgetWidgetBundle.swift; sourceTree = "<group>"; };
-		1A0000232A00000000000001 /* CrystalBudgetWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalBudgetWidget.swift; sourceTree = "<group>"; };
-		1A0000252A00000000000001 /* WidgetTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTimelineProvider.swift; sourceTree = "<group>"; };
-		1A0000272A00000000000001 /* AddExpenseIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseIntent.swift; sourceTree = "<group>"; };
-		1A0000292A00000000000001 /* ShowBalanceIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBalanceIntent.swift; sourceTree = "<group>"; };
-		1A00002B2A00000000000001 /* SyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
-		1A00002D2A00000000000001 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		1A00002F2A00000000000001 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
-		1A0000312A00000000000001 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
-		1A0000332A00000000000001 /* ReceiptScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScannerView.swift; sourceTree = "<group>"; };
-		1A0000352A00000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		1A0000372A00000000000001 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		1A0000392A00000000000001 /* CrystalBudgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalBudgetTests.swift; sourceTree = "<group>"; };
-		1A00003B2A00000000000001 /* CrystalBudgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalBudgetUITests.swift; sourceTree = "<group>"; };
-		1A0000412A00000000000001 /* CrystalBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A0000422A00000000000001 /* CrystalBudgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrystalBudgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A0000432A00000000000001 /* CrystalBudgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrystalBudgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A0000442A00000000000001 /* CrystalBudgetWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CrystalBudgetWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A00001B2A00000000000001 /* QuickAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddView.swift; sourceTree = "<group>"; };
+		1A00001D2A00000000000001 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		1A00001F2A00000000000001 /* ReceiptScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScannerView.swift; sourceTree = "<group>"; };
+		1A0000212A00000000000001 /* SyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
+		1A0000232A00000000000001 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		1A0000252A00000000000001 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
+		1A0000272A00000000000001 /* AppStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyles.swift; sourceTree = "<group>"; };
+		1A0000292A00000000000001 /* AppTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTypes.swift; sourceTree = "<group>"; };
+		1A00002B2A00000000000001 /* CoreDataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataExtensions.swift; sourceTree = "<group>"; };
+		1A00002D2A00000000000001 /* AppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntents.swift; sourceTree = "<group>"; };
+		1A00002F2A00000000000001 /* AddExpenseIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseIntent.swift; sourceTree = "<group>"; };
+		1A0000312A00000000000001 /* ShowBalanceIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBalanceIntent.swift; sourceTree = "<group>"; };
+		1A0000332A00000000000001 /* CompletePullToRefreshSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletePullToRefreshSystem.swift; sourceTree = "<group>"; };
+		1A0000352A00000000000001 /* PullToRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshView.swift; sourceTree = "<group>"; };
+		1A0000372A00000000000001 /* AdvancedPullToRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedPullToRefreshView.swift; sourceTree = "<group>"; };
+		1A0000392A00000000000001 /* EnhancedTransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedTransactionListView.swift; sourceTree = "<group>"; };
+		1A00003B2A00000000000001 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1A00003D2A00000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A00003F2A00000000000001 /* CrystalBudgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalBudgetTests.swift; sourceTree = "<group>"; };
+		1A0000412A00000000000001 /* CrystalBudgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalBudgetUITests.swift; sourceTree = "<group>"; };
+		1A0000432A00000000000001 /* CrystalBudgetWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalBudgetWidgetBundle.swift; sourceTree = "<group>"; };
+		1A0000452A00000000000001 /* CrystalBudgetWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalBudgetWidget.swift; sourceTree = "<group>"; };
+		1A0000472A00000000000001 /* WidgetTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTimelineProvider.swift; sourceTree = "<group>"; };
+		1A0000492A00000000000001 /* EnhancedWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedWidgetViews.swift; sourceTree = "<group>"; };
+		1A00004E2A00000000000001 /* CrystalBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A00004F2A00000000000001 /* CrystalBudgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrystalBudgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0000502A00000000000001 /* CrystalBudgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrystalBudgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0000512A00000000000001 /* CrystalBudgetWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CrystalBudgetWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A0000452A00000000000001 /* Frameworks */ = {
+		1A0000522A00000000000001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A0000462A00000000000001 /* Frameworks */ = {
+		1A0000532A00000000000001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A0000472A00000000000001 /* Frameworks */ = {
+		1A0000542A00000000000001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A0000482A00000000000001 /* Frameworks */ = {
+		1A0000552A00000000000001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,143 +144,142 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A0000492A00000000000001 = {
+		1A0000562A00000000000001 = {
 			isa = PBXGroup;
 			children = (
-				1A00004A2A00000000000001 /* CrystalBudget */,
-				1A00004B2A00000000000001 /* CrystalBudgetWidget */,
-				1A00004C2A00000000000001 /* CrystalBudgetTests */,
-				1A00004D2A00000000000001 /* CrystalBudgetUITests */,
-				1A00004E2A00000000000001 /* Products */,
+				1A0000572A00000000000001 /* CrystalBudget */,
+				1A0000582A00000000000001 /* CrystalBudgetTests */,
+				1A0000592A00000000000001 /* CrystalBudgetUITests */,
+				1A00005A2A00000000000001 /* CrystalBudgetWidget */,
+				1A00005B2A00000000000001 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1A00004A2A00000000000001 /* CrystalBudget */ = {
+		1A0000572A00000000000001 /* CrystalBudget */ = {
 			isa = PBXGroup;
 			children = (
 				1A0000002A00000000000001 /* CrystalBudgetApp.swift */,
 				1A0000022A00000000000001 /* ContentView.swift */,
-				1A00004F2A00000000000001 /* Views */,
-				1A0000502A00000000000001 /* ViewModels */,
-				1A0000512A00000000000001 /* Models */,
-				1A0000522A00000000000001 /* Managers */,
-				1A0000532A00000000000001 /* Utils */,
-				1A0000542A00000000000001 /* Resources */,
+				1A00005C2A00000000000001 /* Views */,
+				1A00005D2A00000000000001 /* Managers */,
+				1A00005E2A00000000000001 /* Models */,
+				1A00005F2A00000000000001 /* Utils */,
+				1A0000602A00000000000001 /* Components */,
+				1A0000042A00000000000001 /* Assets.xcassets */,
+				1A00003B2A00000000000001 /* PrivacyInfo.xcprivacy */,
+				1A00003D2A00000000000001 /* Info.plist */,
+				1A0000072A00000000000001 /* Preview Assets.xcassets */,
 			);
 			path = CrystalBudget;
 			sourceTree = "<group>";
 		};
-		1A00004B2A00000000000001 /* CrystalBudgetWidget */ = {
-			isa = PBXGroup;
-			children = (
-				1A0000212A00000000000001 /* CrystalBudgetWidgetBundle.swift */,
-				1A0000232A00000000000001 /* CrystalBudgetWidget.swift */,
-				1A0000252A00000000000001 /* WidgetTimelineProvider.swift */,
-			);
-			path = CrystalBudgetWidget;
-			sourceTree = "<group>";
-		};
-		1A00004C2A00000000000001 /* CrystalBudgetTests */ = {
-			isa = PBXGroup;
-			children = (
-				1A0000392A00000000000001 /* CrystalBudgetTests.swift */,
-			);
-			path = CrystalBudgetTests;
-			sourceTree = "<group>";
-		};
-		1A00004D2A00000000000001 /* CrystalBudgetUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1A00003B2A00000000000001 /* CrystalBudgetUITests.swift */,
-			);
-			path = CrystalBudgetUITests;
-			sourceTree = "<group>";
-		};
-		1A00004E2A00000000000001 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1A0000412A00000000000001 /* CrystalBudget.app */,
-				1A0000422A00000000000001 /* CrystalBudgetTests.xctest */,
-				1A0000432A00000000000001 /* CrystalBudgetUITests.xctest */,
-				1A0000442A00000000000001 /* CrystalBudgetWidget.appex */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1A00004F2A00000000000001 /* Views */ = {
+		1A00005C2A00000000000001 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				1A0000112A00000000000001 /* DashboardView.swift */,
 				1A0000132A00000000000001 /* TransactionsView.swift */,
 				1A0000152A00000000000001 /* BudgetsView.swift */,
-				1A0000172A00000000000001 /* ReportsView.swift */,
+				1A0000172A00000000000001 /* ChartsView.swift */,
 				1A0000192A00000000000001 /* ProfileView.swift */,
-				1A00001B2A00000000000001 /* TransactionCard.swift */,
-				1A00001D2A00000000000001 /* BudgetProgressView.swift */,
-				1A00001F2A00000000000001 /* QuickAddView.swift */,
-				1A0000312A00000000000001 /* ChartsView.swift */,
-				1A0000332A00000000000001 /* ReceiptScannerView.swift */,
-				1A0000352A00000000000001 /* SettingsView.swift */,
-				1A0000372A00000000000001 /* OnboardingView.swift */,
+				1A00001B2A00000000000001 /* QuickAddView.swift */,
+				1A00001D2A00000000000001 /* OnboardingView.swift */,
+				1A00001F2A00000000000001 /* ReceiptScannerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		1A0000502A00000000000001 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		1A0000512A00000000000001 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				1A00000B2A00000000000001 /* CrystalBudget.xcdatamodeld */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		1A0000522A00000000000001 /* Managers */ = {
+		1A00005D2A00000000000001 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				1A00000D2A00000000000001 /* CoreDataManager.swift */,
 				1A00000F2A00000000000001 /* AuthenticationManager.swift */,
-				1A00002B2A00000000000001 /* SyncManager.swift */,
-				1A00002D2A00000000000001 /* NotificationManager.swift */,
-				1A00002F2A00000000000001 /* CryptoManager.swift */,
+				1A0000212A00000000000001 /* SyncManager.swift */,
+				1A0000232A00000000000001 /* NotificationManager.swift */,
+				1A0000252A00000000000001 /* CryptoManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		1A0000532A00000000000001 /* Utils */ = {
+		1A00005E2A00000000000001 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1A0000272A00000000000001 /* AddExpenseIntent.swift */,
-				1A0000292A00000000000001 /* ShowBalanceIntent.swift */,
+				1A00000B2A00000000000001 /* CrystalBudget.xcdatamodeld */,
+				1A0000292A00000000000001 /* AppTypes.swift */,
+				1A00002B2A00000000000001 /* CoreDataExtensions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A00005F2A00000000000001 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000272A00000000000001 /* AppStyles.swift */,
+				1A00002D2A00000000000001 /* AppIntents.swift */,
+				1A00002F2A00000000000001 /* AddExpenseIntent.swift */,
+				1A0000312A00000000000001 /* ShowBalanceIntent.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		1A0000542A00000000000001 /* Resources */ = {
+		1A0000602A00000000000001 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				1A0000042A00000000000001 /* Assets.xcassets */,
-				1A0000072A00000000000001 /* Preview Assets.xcassets */,
+				1A0000332A00000000000001 /* CompletePullToRefreshSystem.swift */,
+				1A0000352A00000000000001 /* PullToRefreshView.swift */,
+				1A0000372A00000000000001 /* AdvancedPullToRefreshView.swift */,
+				1A0000392A00000000000001 /* EnhancedTransactionListView.swift */,
 			);
-			path = Resources;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1A0000582A00000000000001 /* CrystalBudgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A00003F2A00000000000001 /* CrystalBudgetTests.swift */,
+			);
+			path = CrystalBudgetTests;
+			sourceTree = "<group>";
+		};
+		1A0000592A00000000000001 /* CrystalBudgetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000412A00000000000001 /* CrystalBudgetUITests.swift */,
+			);
+			path = CrystalBudgetUITests;
+			sourceTree = "<group>";
+		};
+		1A00005A2A00000000000001 /* CrystalBudgetWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000432A00000000000001 /* CrystalBudgetWidgetBundle.swift */,
+				1A0000452A00000000000001 /* CrystalBudgetWidget.swift */,
+				1A0000472A00000000000001 /* WidgetTimelineProvider.swift */,
+				1A0000492A00000000000001 /* EnhancedWidgetViews.swift */,
+			);
+			path = CrystalBudgetWidget;
+			sourceTree = "<group>";
+		};
+		1A00005B2A00000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A00004E2A00000000000001 /* CrystalBudget.app */,
+				1A00004F2A00000000000001 /* CrystalBudgetTests.xctest */,
+				1A0000502A00000000000001 /* CrystalBudgetUITests.xctest */,
+				1A0000512A00000000000001 /* CrystalBudgetWidget.appex */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A0000552A00000000000001 /* CrystalBudget */ = {
+		1A0000612A00000000000001 /* CrystalBudget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A0000562A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudget" */;
+			buildConfigurationList = 1A0000622A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudget" */;
 			buildPhases = (
-				1A0000572A00000000000001 /* Sources */,
-				1A0000452A00000000000001 /* Frameworks */,
-				1A0000582A00000000000001 /* Resources */,
+				1A0000632A00000000000001 /* Sources */,
+				1A0000522A00000000000001 /* Frameworks */,
+				1A0000642A00000000000001 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -267,134 +287,138 @@
 			);
 			name = CrystalBudget;
 			productName = CrystalBudget;
-			productReference = 1A0000412A00000000000001 /* CrystalBudget.app */;
+			productReference = 1A00004E2A00000000000001 /* CrystalBudget.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1A0000592A00000000000001 /* CrystalBudgetTests */ = {
+		1A0000652A00000000000001 /* CrystalBudgetTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A00005A2A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetTests" */;
+			buildConfigurationList = 1A0000662A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetTests" */;
 			buildPhases = (
-				1A00005B2A00000000000001 /* Sources */,
-				1A0000462A00000000000001 /* Frameworks */,
-				1A00005C2A00000000000001 /* Resources */,
+				1A0000672A00000000000001 /* Sources */,
+				1A0000532A00000000000001 /* Frameworks */,
+				1A0000682A00000000000001 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1A00005D2A00000000000001 /* PBXTargetDependency */,
+				1A0000692A00000000000001 /* PBXTargetDependency */,
 			);
 			name = CrystalBudgetTests;
 			productName = CrystalBudgetTests;
-			productReference = 1A0000422A00000000000001 /* CrystalBudgetTests.xctest */;
+			productReference = 1A00004F2A00000000000001 /* CrystalBudgetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1A00005E2A00000000000001 /* CrystalBudgetUITests */ = {
+		1A00006A2A00000000000001 /* CrystalBudgetUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A00005F2A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetUITests" */;
+			buildConfigurationList = 1A00006B2A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetUITests" */;
 			buildPhases = (
-				1A0000602A00000000000001 /* Sources */,
-				1A0000472A00000000000001 /* Frameworks */,
-				1A0000612A00000000000001 /* Resources */,
+				1A00006C2A00000000000001 /* Sources */,
+				1A0000542A00000000000001 /* Frameworks */,
+				1A00006D2A00000000000001 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1A0000622A00000000000001 /* PBXTargetDependency */,
+				1A00006E2A00000000000001 /* PBXTargetDependency */,
 			);
 			name = CrystalBudgetUITests;
 			productName = CrystalBudgetUITests;
-			productReference = 1A0000432A00000000000001 /* CrystalBudgetUITests.xctest */;
+			productReference = 1A0000502A00000000000001 /* CrystalBudgetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		1A0000632A00000000000001 /* CrystalBudgetWidget */ = {
+		1A00006F2A00000000000001 /* CrystalBudgetWidget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A0000642A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetWidget" */;
+			buildConfigurationList = 1A0000702A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetWidget" */;
 			buildPhases = (
-				1A0000652A00000000000001 /* Sources */,
-				1A0000482A00000000000001 /* Frameworks */,
-				1A0000662A00000000000001 /* Resources */,
+				1A0000712A00000000000001 /* Sources */,
+				1A0000552A00000000000001 /* Frameworks */,
+				1A0000722A00000000000001 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1A0000732A00000000000001 /* PBXTargetDependency */,
 			);
 			name = CrystalBudgetWidget;
 			productName = CrystalBudgetWidget;
-			productReference = 1A0000442A00000000000001 /* CrystalBudgetWidget.appex */;
+			productReference = 1A0000512A00000000000001 /* CrystalBudgetWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1A00003D2A00000000000001 /* Project object */ = {
+		1A00004B2A00000000000001 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					1A0000552A00000000000001 = {
+					1A0000612A00000000000001 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					1A0000592A00000000000001 = {
+					1A0000652A00000000000001 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 1A0000552A00000000000001;
+						TestTargetID = 1A0000612A00000000000001;
 					};
-					1A00005E2A00000000000001 = {
+					1A00006A2A00000000000001 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 1A0000552A00000000000001;
+						TestTargetID = 1A0000612A00000000000001;
 					};
-					1A0000632A00000000000001 = {
+					1A00006F2A00000000000001 = {
 						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 1A0000612A00000000000001;
 					};
 				};
 			};
-			buildConfigurationList = 1A0000672A00000000000001 /* Build configuration list for PBXProject "CrystalBudget" */;
+			buildConfigurationList = 1A0000742A00000000000001 /* Build configuration list for PBXProject "CrystalBudget" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				ru,
 			);
-			mainGroup = 1A0000492A00000000000001;
-			productRefGroup = 1A00004E2A00000000000001 /* Products */;
+			mainGroup = 1A0000562A00000000000001;
+			productRefGroup = 1A00005B2A00000000000001 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A0000552A00000000000001 /* CrystalBudget */,
-				1A0000592A00000000000001 /* CrystalBudgetTests */,
-				1A00005E2A00000000000001 /* CrystalBudgetUITests */,
-				1A0000632A00000000000001 /* CrystalBudgetWidget */,
+				1A0000612A00000000000001 /* CrystalBudget */,
+				1A0000652A00000000000001 /* CrystalBudgetTests */,
+				1A00006A2A00000000000001 /* CrystalBudgetUITests */,
+				1A00006F2A00000000000001 /* CrystalBudgetWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A0000582A00000000000001 /* Resources */ = {
+		1A0000642A00000000000001 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1A0000082A00000000000001 /* Preview Assets.xcassets in Resources */,
 				1A0000052A00000000000001 /* Assets.xcassets in Resources */,
+				1A00003A2A00000000000001 /* PrivacyInfo.xcprivacy in Resources */,
+				1A00003C2A00000000000001 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A00005C2A00000000000001 /* Resources */ = {
+		1A0000682A00000000000001 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A0000612A00000000000001 /* Resources */ = {
+		1A00006D2A00000000000001 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A0000662A00000000000001 /* Resources */ = {
+		1A0000722A00000000000001 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -404,7 +428,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A0000572A00000000000001 /* Sources */ = {
+		1A0000632A00000000000001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,64 +440,76 @@
 				1A0000102A00000000000001 /* DashboardView.swift in Sources */,
 				1A0000122A00000000000001 /* TransactionsView.swift in Sources */,
 				1A0000142A00000000000001 /* BudgetsView.swift in Sources */,
-				1A0000162A00000000000001 /* ReportsView.swift in Sources */,
+				1A0000162A00000000000001 /* ChartsView.swift in Sources */,
 				1A0000182A00000000000001 /* ProfileView.swift in Sources */,
-				1A00001A2A00000000000001 /* TransactionCard.swift in Sources */,
-				1A00001C2A00000000000001 /* BudgetProgressView.swift in Sources */,
-				1A00001E2A00000000000001 /* QuickAddView.swift in Sources */,
-				1A00002A2A00000000000001 /* SyncManager.swift in Sources */,
-				1A00002C2A00000000000001 /* NotificationManager.swift in Sources */,
-				1A00002E2A00000000000001 /* CryptoManager.swift in Sources */,
-				1A0000302A00000000000001 /* ChartsView.swift in Sources */,
-				1A0000322A00000000000001 /* ReceiptScannerView.swift in Sources */,
-				1A0000342A00000000000001 /* SettingsView.swift in Sources */,
-				1A0000362A00000000000001 /* OnboardingView.swift in Sources */,
+				1A00001A2A00000000000001 /* QuickAddView.swift in Sources */,
+				1A00001C2A00000000000001 /* OnboardingView.swift in Sources */,
+				1A00001E2A00000000000001 /* ReceiptScannerView.swift in Sources */,
+				1A0000202A00000000000001 /* SyncManager.swift in Sources */,
+				1A0000222A00000000000001 /* NotificationManager.swift in Sources */,
+				1A0000242A00000000000001 /* CryptoManager.swift in Sources */,
+				1A0000262A00000000000001 /* AppStyles.swift in Sources */,
+				1A0000282A00000000000001 /* AppTypes.swift in Sources */,
+				1A00002A2A00000000000001 /* CoreDataExtensions.swift in Sources */,
+				1A00002C2A00000000000001 /* AppIntents.swift in Sources */,
+				1A00002E2A00000000000001 /* AddExpenseIntent.swift in Sources */,
+				1A0000302A00000000000001 /* ShowBalanceIntent.swift in Sources */,
+				1A0000322A00000000000001 /* CompletePullToRefreshSystem.swift in Sources */,
+				1A0000342A00000000000001 /* PullToRefreshView.swift in Sources */,
+				1A0000362A00000000000001 /* AdvancedPullToRefreshView.swift in Sources */,
+				1A0000382A00000000000001 /* EnhancedTransactionListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A00005B2A00000000000001 /* Sources */ = {
+		1A0000672A00000000000001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0000382A00000000000001 /* CrystalBudgetTests.swift in Sources */,
+				1A00003E2A00000000000001 /* CrystalBudgetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A0000602A00000000000001 /* Sources */ = {
+		1A00006C2A00000000000001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A00003A2A00000000000001 /* CrystalBudgetUITests.swift in Sources */,
+				1A0000402A00000000000001 /* CrystalBudgetUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A0000652A00000000000001 /* Sources */ = {
+		1A0000712A00000000000001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0000202A00000000000001 /* CrystalBudgetWidgetBundle.swift in Sources */,
-				1A0000222A00000000000001 /* CrystalBudgetWidget.swift in Sources */,
-				1A0000242A00000000000001 /* WidgetTimelineProvider.swift in Sources */,
+				1A0000422A00000000000001 /* CrystalBudgetWidgetBundle.swift in Sources */,
+				1A0000442A00000000000001 /* CrystalBudgetWidget.swift in Sources */,
+				1A0000462A00000000000001 /* WidgetTimelineProvider.swift in Sources */,
+				1A0000482A00000000000001 /* EnhancedWidgetViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1A00005D2A00000000000001 /* PBXTargetDependency */ = {
+		1A0000692A00000000000001 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A0000552A00000000000001 /* CrystalBudget */;
-			targetProxy = 1A00003C2A00000000000001 /* PBXContainerItemProxy */;
+			target = 1A0000612A00000000000001 /* CrystalBudget */;
+			targetProxy = 1A00004A2A00000000000001 /* PBXContainerItemProxy */;
 		};
-		1A0000622A00000000000001 /* PBXTargetDependency */ = {
+		1A00006E2A00000000000001 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A0000552A00000000000001 /* CrystalBudget */;
-			targetProxy = 1A00003F2A00000000000001 /* PBXContainerItemProxy */;
+			target = 1A0000612A00000000000001 /* CrystalBudget */;
+			targetProxy = 1A00004C2A00000000000001 /* PBXContainerItemProxy */;
+		};
+		1A0000732A00000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A0000612A00000000000001 /* CrystalBudget */;
+			targetProxy = 1A00004D2A00000000000001 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1A0000682A00000000000001 /* Debug */ = {
+		1A0000752A00000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -536,7 +572,7 @@
 			};
 			name = Debug;
 		};
-		1A0000692A00000000000001 /* Release */ = {
+		1A0000762A00000000000001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -560,8 +596,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
@@ -594,7 +628,7 @@
 			};
 			name = Release;
 		};
-		1A00006A2A00000000000001 /* Debug */ = {
+		1A0000772A00000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -604,8 +638,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CrystalBudget/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "CrystalBudget";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_FILE = CrystalBudget/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -617,7 +650,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.crystalbudget.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystalbudget.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -625,7 +658,7 @@
 			};
 			name = Debug;
 		};
-		1A00006B2A00000000000001 /* Release */ = {
+		1A0000782A00000000000001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -635,8 +668,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CrystalBudget/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "CrystalBudget";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_FILE = CrystalBudget/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -648,7 +680,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.crystalbudget.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystalbudget.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -656,7 +688,7 @@
 			};
 			name = Release;
 		};
-		1A00006C2A00000000000001 /* Debug */ = {
+		1A0000792A00000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -666,7 +698,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.crystalbudget.app.CrystalBudgetTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystalbudget.app.CrystalBudgetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -675,7 +707,7 @@
 			};
 			name = Debug;
 		};
-		1A00006D2A00000000000001 /* Release */ = {
+		1A00007A2A00000000000001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -685,7 +717,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.crystalbudget.app.CrystalBudgetTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystalbudget.app.CrystalBudgetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -694,7 +726,7 @@
 			};
 			name = Release;
 		};
-		1A00006E2A00000000000001 /* Debug */ = {
+		1A00007B2A00000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -703,7 +735,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.crystalbudget.app.CrystalBudgetUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystalbudget.app.CrystalBudgetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -712,7 +744,7 @@
 			};
 			name = Debug;
 		};
-		1A00006F2A00000000000001 /* Release */ = {
+		1A00007C2A00000000000001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -721,7 +753,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.crystalbudget.app.CrystalBudgetUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystalbudget.app.CrystalBudgetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -730,18 +762,24 @@
 			};
 			name = Release;
 		};
-		1A0000702A00000000000001 /* Debug */ = {
+		1A00007D2A00000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = CrystalBudgetWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = CrystalBudget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.crystalbudget.app.CrystalBudgetWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystalbudget.app.CrystalBudgetWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -750,18 +788,24 @@
 			};
 			name = Debug;
 		};
-		1A0000712A00000000000001 /* Release */ = {
+		1A00007E2A00000000000001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = CrystalBudgetWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = CrystalBudget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.crystalbudget.app.CrystalBudgetWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystalbudget.app.CrystalBudgetWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -773,47 +817,47 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A0000562A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudget" */ = {
+		1A0000742A00000000000001 /* Build configuration list for PBXProject "CrystalBudget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A00006A2A00000000000001 /* Debug */,
-				1A00006B2A00000000000001 /* Release */,
+				1A0000752A00000000000001 /* Debug */,
+				1A0000762A00000000000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A00005A2A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetTests" */ = {
+		1A0000622A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A00006C2A00000000000001 /* Debug */,
-				1A00006D2A00000000000001 /* Release */,
+				1A0000772A00000000000001 /* Debug */,
+				1A0000782A00000000000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A00005F2A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetUITests" */ = {
+		1A0000662A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A00006E2A00000000000001 /* Debug */,
-				1A00006F2A00000000000001 /* Release */,
+				1A0000792A00000000000001 /* Debug */,
+				1A00007A2A00000000000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A0000642A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetWidget" */ = {
+		1A00006B2A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A0000702A00000000000001 /* Debug */,
-				1A0000712A00000000000001 /* Release */,
+				1A00007B2A00000000000001 /* Debug */,
+				1A00007C2A00000000000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A0000672A00000000000001 /* Build configuration list for PBXProject "CrystalBudget" */ = {
+		1A0000702A00000000000001 /* Build configuration list for PBXNativeTarget "CrystalBudgetWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A0000682A00000000000001 /* Debug */,
-				1A0000692A00000000000001 /* Release */,
+				1A00007D2A00000000000001 /* Debug */,
+				1A00007E2A00000000000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -824,14 +868,14 @@
 		1A00000B2A00000000000001 /* CrystalBudget.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1A0000722A00000000000001 /* CrystalBudget.xcdatamodel */,
+				1A00000B2A00000000000001 /* CrystalBudget.xcdatamodel */,
 			);
-			currentVersion = 1A0000722A00000000000001 /* CrystalBudget.xcdatamodel */;
+			currentVersion = 1A00000B2A00000000000001 /* CrystalBudget.xcdatamodel */;
 			path = CrystalBudget.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 1A00003D2A00000000000001 /* Project object */;
+	rootObject = 1A00004B2A00000000000001 /* Project object */;
 }
