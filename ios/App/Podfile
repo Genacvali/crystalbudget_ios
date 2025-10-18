@@ -31,13 +31,4 @@ end
 
 post_install do |installer|
   assertDeploymentTarget(installer)
-  
-  # Исправление ошибок double-quoted include в CapacitorCordova
-  installer.pods_project.targets.each do |target|
-    if target.name == 'CapacitorCordova'
-      target.build_configurations.each do |config|
-        config.build_settings['GCC_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER'] = 'NO'
-      end
-    end
-  end
 end

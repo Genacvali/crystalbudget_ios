@@ -1,32 +1,22 @@
 import { useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { StatusBar, Style } from '@capacitor/status-bar';
-import { isNative } from '@/utils/capacitor';
 
-/**
- * Компонент для синхронизации темы приложения с iOS status bar
- */
 export function ThemeColorUpdater() {
   const { theme, resolvedTheme } = useTheme();
 
   useEffect(() => {
-    if (!isNative) return;
-
-    const updateStatusBar = async () => {
-      const isDark = resolvedTheme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
-      
-      try {
-        await StatusBar.setStyle({
-          style: isDark ? Style.Dark : Style.Light
-        });
-      } catch (error) {
-        console.error('[ThemeColorUpdater] Failed to update status bar:', error);
-      }
-    };
-
-    updateStatusBar();
+    // Определяем актуальную тему (system может быть dark или light)
+    const currentTheme = theme === 'system' ? resolvedTheme : theme;
+    
+    // Цвета для статус-бара в зависимости от темы
+    const themeColor = currentTheme === 'dark' ? '#0f172a' : '#ffffff';
+    
+    // Обновляем мета-тег theme-color
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', themeColor);
+    }
   }, [theme, resolvedTheme]);
 
   return null;
 }
-

@@ -1,0 +1,11 @@
+import{c as $,r as u,j as l,a as I,P as m,g as E}from"./index-BczRz4ky.js";/**
+ * @license lucide-react v0.462.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const D=$("Pencil",[["path",{d:"M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z",key:"1a8usu"}],["path",{d:"m15 5 4 4",key:"1mk7zo"}]]);var d="Progress",c=100,[R]=I(d),[j,w]=R(d),f=u.forwardRef((e,a)=>{const{__scopeProgress:n,value:o=null,max:r,getValueLabel:b=M,...h}=e;(r||r===0)&&!v(r)&&console.error(_(`${r}`,"Progress"));const s=v(r)?r:c;o!==null&&!p(o,s)&&console.error(L(`${o}`,"Progress"));const t=p(o,s)?o:null,y=i(t)?b(t,s):void 0;return l.jsx(j,{scope:n,value:t,max:s,children:l.jsx(m.div,{"aria-valuemax":s,"aria-valuemin":0,"aria-valuenow":i(t)?t:void 0,"aria-valuetext":y,role:"progressbar","data-state":P(t,s),"data-value":t??void 0,"data-max":s,...h,ref:a})})});f.displayName=d;var g="ProgressIndicator",x=u.forwardRef((e,a)=>{const{__scopeProgress:n,...o}=e,r=w(g,n);return l.jsx(m.div,{"data-state":P(r.value,r.max),"data-value":r.value??void 0,"data-max":r.max,...o,ref:a})});x.displayName=g;function M(e,a){return`${Math.round(e/a*100)}%`}function P(e,a){return e==null?"indeterminate":e===a?"complete":"loading"}function i(e){return typeof e=="number"}function v(e){return i(e)&&!isNaN(e)&&e>0}function p(e,a){return i(e)&&!isNaN(e)&&e<=a&&e>=0}function _(e,a){return`Invalid prop \`max\` of value \`${e}\` supplied to \`${a}\`. Only numbers greater than 0 are valid max values. Defaulting to \`${c}\`.`}function L(e,a){return`Invalid prop \`value\` of value \`${e}\` supplied to \`${a}\`. The \`value\` prop must be:
+  - a positive number
+  - less than the value passed to \`max\` (or ${c} if no \`max\` prop is set)
+  - \`null\` or \`undefined\` if the progress is indeterminate.
+
+Defaulting to \`null\`.`}var N=f,V=x;const A=u.forwardRef(({className:e,value:a,...n},o)=>l.jsx(N,{ref:o,className:E("relative h-4 w-full overflow-hidden rounded-full bg-secondary",e),...n,children:l.jsx(V,{className:"h-full w-full flex-1 bg-primary transition-all",style:{transform:`translateX(-${100-(a||0)}%)`}})}));A.displayName=N.displayName;export{A as P,D as a};

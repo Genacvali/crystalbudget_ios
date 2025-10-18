@@ -32,13 +32,13 @@ export function Navigation() {
             key={item.path}
             to={item.path}
             className={cn(
-              "flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors",
+              "flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ease-out",
               isActive
-                ? "bg-primary text-primary-foreground"
-                : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                ? "nav-item-active"
+                : "nav-item-smooth text-muted-foreground hover:text-foreground hover:bg-secondary"
             )}
           >
-            <Icon className="h-4 w-4" />
+            <Icon className="h-4 w-4 icon-smooth" />
             <span>{item.label}</span>
           </Link>
         );

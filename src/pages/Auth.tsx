@@ -227,16 +227,16 @@ const Auth = () => {
             <CardContent className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="new-password">Новый пароль</Label>
-                <Input id="new-password" type="password" placeholder="••••••" value={newPassword} onChange={e => setNewPassword(e.target.value)} required />
+                <Input id="new-password" type="password" placeholder="••••••" value={newPassword} onChange={e => setNewPassword(e.target.value)} required className="input-smooth" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="confirm-password">Подтвердите пароль</Label>
-                <Input id="confirm-password" type="password" placeholder="••••••" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} required />
+                <Input id="confirm-password" type="password" placeholder="••••••" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} required className="input-smooth" />
               </div>
             </CardContent>
             <CardFooter>
-              <Button type="submit" className="w-full" disabled={loading}>
-                {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+              <Button type="submit" className="w-full btn-primary-smooth" disabled={loading}>
+                {loading && <Loader2 className="mr-2 h-4 w-4 spinner-smooth" />}
                 Обновить пароль
               </Button>
             </CardFooter>
@@ -257,15 +257,15 @@ const Auth = () => {
             <CardContent className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="reset-email">Email</Label>
-                <Input id="reset-email" type="email" placeholder="your@email.com" value={resetEmail} onChange={e => setResetEmail(e.target.value)} required />
+                <Input id="reset-email" type="email" placeholder="your@email.com" value={resetEmail} onChange={e => setResetEmail(e.target.value)} required className="input-smooth" />
               </div>
             </CardContent>
             <CardFooter className="flex flex-col space-y-2">
-              <Button type="submit" className="w-full" disabled={loading}>
-                {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+              <Button type="submit" className="w-full btn-primary-smooth" disabled={loading}>
+                {loading && <Loader2 className="mr-2 h-4 w-4 spinner-smooth" />}
                 Отправить ссылку
               </Button>
-              <Button type="button" variant="ghost" className="w-full" onClick={() => setResetMode(false)}>
+              <Button type="button" variant="ghost" className="w-full btn-secondary-smooth" onClick={() => setResetMode(false)}>
                 Назад ко входу
               </Button>
             </CardFooter>
@@ -274,12 +274,12 @@ const Auth = () => {
       </div>;
   }
   return <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-secondary/20 p-4">
-      <Card className="w-full max-w-md">
+      <Card className="w-full max-w-md card-smooth">
         <CardHeader className="text-center">
           <div className="flex justify-center mb-4">
-            <img src={crystalIcon} alt="CrystalBudget" className="w-20 h-20" />
+            <img src={crystalIcon} alt="CrystalBudget" className="w-20 h-20 hover-scale icon-smooth" />
           </div>
-          <CardTitle className="text-2xl font-bold">CrystalBudget</CardTitle>
+          <CardTitle className="text-2xl font-bold text-gradient-smooth">CrystalBudget</CardTitle>
           
         </CardHeader>
         <CardContent>
@@ -293,17 +293,17 @@ const Auth = () => {
               <form onSubmit={handleLogin} className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="login-email">Email</Label>
-                  <Input id="login-email" type="email" placeholder="your@email.com" value={loginEmail} onChange={e => setLoginEmail(e.target.value)} required />
+                  <Input id="login-email" type="email" placeholder="your@email.com" value={loginEmail} onChange={e => setLoginEmail(e.target.value)} required className="input-smooth" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="login-password">Пароль</Label>
-                  <Input id="login-password" type="password" placeholder="••••••" value={loginPassword} onChange={e => setLoginPassword(e.target.value)} required />
+                  <Input id="login-password" type="password" placeholder="••••••" value={loginPassword} onChange={e => setLoginPassword(e.target.value)} required className="input-smooth" />
                 </div>
-                <Button type="submit" className="w-full" disabled={loading}>
-                  {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                <Button type="submit" className="w-full btn-primary-smooth" disabled={loading}>
+                  {loading && <Loader2 className="mr-2 h-4 w-4 spinner-smooth" />}
                   Войти
                 </Button>
-                <Button type="button" variant="link" className="w-full" onClick={() => setResetMode(true)}>
+                <Button type="button" variant="link" className="w-full btn-secondary-smooth" onClick={() => setResetMode(true)}>
                   Забыли пароль?
                 </Button>
               </form>
@@ -313,18 +313,18 @@ const Auth = () => {
               <form onSubmit={handleSignup} className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="signup-name">Имя</Label>
-                  <Input id="signup-name" type="text" placeholder="Иван Иванов" value={signupName} onChange={e => setSignupName(e.target.value)} required />
+                  <Input id="signup-name" type="text" placeholder="Иван Иванов" value={signupName} onChange={e => setSignupName(e.target.value)} required className="input-smooth" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="signup-email">Email</Label>
-                  <Input id="signup-email" type="email" placeholder="your@email.com" value={signupEmail} onChange={e => setSignupEmail(e.target.value)} required />
+                  <Input id="signup-email" type="email" placeholder="your@email.com" value={signupEmail} onChange={e => setSignupEmail(e.target.value)} required className="input-smooth" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="signup-password">Пароль</Label>
-                  <Input id="signup-password" type="password" placeholder="••••••" value={signupPassword} onChange={e => setSignupPassword(e.target.value)} required />
+                  <Input id="signup-password" type="password" placeholder="••••••" value={signupPassword} onChange={e => setSignupPassword(e.target.value)} required className="input-smooth" />
                 </div>
-                <Button type="submit" className="w-full" disabled={loading}>
-                  {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                <Button type="submit" className="w-full btn-primary-smooth" disabled={loading}>
+                  {loading && <Loader2 className="mr-2 h-4 w-4 spinner-smooth" />}
                   Зарегистрироваться
                 </Button>
               </form>

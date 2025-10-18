@@ -1,0 +1,392 @@
+/* Глобальные анимации для улучшения UX */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Плавные переходы для всех интерактивных элементов */
+@layer base {
+  * {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+  }
+}
+
+/* Анимации для кнопок */
+@layer components {
+  .btn-smooth {
+    @apply transition-all duration-200 ease-out;
+    @apply hover:scale-[1.02] active:scale-[0.98];
+    @apply hover:shadow-md active:shadow-sm;
+  }
+  
+  .btn-primary-smooth {
+    @apply btn-smooth;
+    @apply hover:bg-primary/90 active:bg-primary/80;
+  }
+  
+  .btn-secondary-smooth {
+    @apply btn-smooth;
+    @apply hover:bg-secondary/80 active:bg-secondary/60;
+  }
+}
+
+/* Анимации для карточек */
+@layer components {
+  .card-smooth {
+    @apply transition-all duration-300 ease-out;
+    @apply hover:shadow-lg hover:scale-[1.01];
+    @apply active:scale-[0.99] active:shadow-md;
+  }
+  
+  .card-interactive {
+    @apply card-smooth;
+    @apply cursor-pointer;
+    @apply hover:bg-secondary/50;
+  }
+}
+
+/* Анимации для навигации */
+@layer components {
+  .nav-item-smooth {
+    @apply transition-all duration-200 ease-out;
+    @apply hover:scale-[1.02] hover:translate-x-1;
+    @apply active:scale-[0.98];
+  }
+  
+  .nav-item-active {
+    @apply nav-item-smooth;
+    @apply bg-primary text-primary-foreground shadow-md;
+    @apply hover:bg-primary/90;
+  }
+}
+
+/* Анимации для форм */
+@layer components {
+  .input-smooth {
+    @apply transition-all duration-200 ease-out;
+    @apply focus:scale-[1.01] focus:shadow-md;
+    @apply hover:border-primary/50;
+  }
+  
+  .form-group-smooth {
+    @apply transition-all duration-200 ease-out;
+    @apply focus-within:scale-[1.01];
+  }
+}
+
+/* Анимации для модальных окон */
+@layer components {
+  .modal-smooth {
+    @apply transition-all duration-300 ease-out;
+    @apply animate-in fade-in-0 zoom-in-95;
+  }
+  
+  .modal-backdrop-smooth {
+    @apply transition-all duration-300 ease-out;
+    @apply animate-in fade-in-0;
+  }
+}
+
+/* Анимации для списков */
+@layer components {
+  .list-item-smooth {
+    @apply transition-all duration-200 ease-out;
+    @apply hover:bg-secondary/50 hover:scale-[1.01];
+    @apply active:scale-[0.99];
+  }
+  
+  .list-item-selected {
+    @apply list-item-smooth;
+    @apply bg-primary/10 border-primary/20;
+  }
+}
+
+/* Анимации для иконок */
+@layer components {
+  .icon-smooth {
+    @apply transition-all duration-200 ease-out;
+    @apply hover:scale-110 active:scale-95;
+  }
+  
+  .icon-rotate-smooth {
+    @apply icon-smooth;
+    @apply hover:rotate-12 active:rotate-0;
+  }
+}
+
+/* Анимации для текста */
+@layer components {
+  .text-smooth {
+    @apply transition-colors duration-200 ease-out;
+  }
+  
+  .text-gradient-smooth {
+    @apply text-smooth;
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    @apply hover:from-primary/80 hover:to-accent/80;
+  }
+}
+
+/* Анимации для прогресс-баров */
+@layer components {
+  .progress-smooth {
+    @apply transition-all duration-500 ease-out;
+  }
+  
+  .progress-bar-smooth {
+    @apply progress-smooth;
+    @apply animate-pulse;
+  }
+}
+
+/* Анимации для уведомлений */
+@layer components {
+  .toast-smooth {
+    @apply transition-all duration-300 ease-out;
+    @apply animate-in slide-in-from-top-2 fade-in-0;
+  }
+  
+  .toast-success {
+    @apply toast-smooth;
+    @apply bg-green-500/10 border-green-500/20 text-green-700;
+  }
+  
+  .toast-error {
+    @apply toast-smooth;
+    @apply bg-red-500/10 border-red-500/20 text-red-700;
+  }
+}
+
+/* Анимации для загрузки */
+@layer components {
+  .loading-smooth {
+    @apply animate-pulse;
+  }
+  
+  .spinner-smooth {
+    @apply animate-spin;
+    @apply transition-all duration-200 ease-out;
+  }
+}
+
+/* Анимации для свайпов */
+@layer components {
+  .swipe-hint {
+    @apply transition-all duration-200 ease-out;
+    @apply bg-gradient-to-r from-primary/10 to-transparent;
+  }
+  
+  .swipe-close-hint {
+    @apply transition-all duration-200 ease-out;
+    @apply bg-gradient-to-l from-red-500/10 to-transparent;
+  }
+}
+
+/* Анимации для переключения тем */
+@layer components {
+  .theme-transition {
+    @apply transition-all duration-300 ease-out;
+  }
+}
+
+/* Анимации для скролла */
+@layer components {
+  .scroll-smooth {
+    @apply scroll-smooth;
+  }
+  
+  .scroll-indicator {
+    @apply transition-all duration-200 ease-out;
+    @apply opacity-0 hover:opacity-100;
+  }
+}
+
+/* Анимации для ховера */
+@layer components {
+  .hover-lift {
+    @apply transition-all duration-200 ease-out;
+    @apply hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-200 ease-out;
+    @apply hover:shadow-lg hover:shadow-primary/25;
+  }
+  
+  .hover-scale {
+    @apply transition-all duration-200 ease-out;
+    @apply hover:scale-105 active:scale-95;
+  }
+}
+
+/* Анимации для фокуса */
+@layer components {
+  .focus-ring {
+    @apply transition-all duration-200 ease-out;
+    @apply focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+  }
+  
+  .focus-scale {
+    @apply transition-all duration-200 ease-out;
+    @apply focus:scale-105 focus:shadow-md;
+  }
+}
+
+/* Анимации для состояний */
+@layer components {
+  .state-loading {
+    @apply opacity-50 pointer-events-none;
+    @apply transition-all duration-200 ease-out;
+  }
+  
+  .state-disabled {
+    @apply opacity-50 cursor-not-allowed;
+    @apply transition-all duration-200 ease-out;
+  }
+  
+  .state-active {
+    @apply scale-105 shadow-md;
+    @apply transition-all duration-200 ease-out;
+  }
+}
+
+/* Анимации для появления элементов */
+@layer components {
+  .fade-in {
+    @apply animate-in fade-in-0 duration-300;
+  }
+  
+  .slide-in-up {
+    @apply animate-in slide-in-from-bottom-4 fade-in-0 duration-300;
+  }
+  
+  .slide-in-down {
+    @apply animate-in slide-in-from-top-4 fade-in-0 duration-300;
+  }
+  
+  .slide-in-left {
+    @apply animate-in slide-in-from-left-4 fade-in-0 duration-300;
+  }
+  
+  .slide-in-right {
+    @apply animate-in slide-in-from-right-4 fade-in-0 duration-300;
+  }
+  
+  .zoom-in {
+    @apply animate-in zoom-in-95 fade-in-0 duration-300;
+  }
+  
+  .zoom-out {
+    @apply animate-in zoom-out-95 fade-in-0 duration-300;
+  }
+}
+
+/* Анимации для исчезновения элементов */
+@layer components {
+  .fade-out {
+    @apply animate-out fade-out-0 duration-200;
+  }
+  
+  .slide-out-up {
+    @apply animate-out slide-out-to-top-4 fade-out-0 duration-200;
+  }
+  
+  .slide-out-down {
+    @apply animate-out slide-out-to-bottom-4 fade-out-0 duration-200;
+  }
+  
+  .slide-out-left {
+    @apply animate-out slide-out-to-left-4 fade-out-0 duration-200;
+  }
+  
+  .slide-out-right {
+    @apply animate-out slide-out-to-right-4 fade-out-0 duration-200;
+  }
+  
+  .zoom-out-exit {
+    @apply animate-out zoom-out-95 fade-out-0 duration-200;
+  }
+}
+
+/* Анимации для stagger эффектов */
+@layer components {
+  .stagger-1 {
+    @apply delay-0;
+  }
+  
+  .stagger-2 {
+    @apply delay-75;
+  }
+  
+  .stagger-3 {
+    @apply delay-150;
+  }
+  
+  .stagger-4 {
+    @apply delay-225;
+  }
+  
+  .stagger-5 {
+    @apply delay-300;
+  }
+}
+
+/* Анимации для bounce эффектов */
+@layer components {
+  .bounce-smooth {
+    @apply animate-bounce;
+    @apply transition-all duration-200 ease-out;
+  }
+  
+  .bounce-subtle {
+    @apply hover:animate-bounce;
+    @apply transition-all duration-200 ease-out;
+  }
+}
+
+/* Анимации для shake эффектов */
+@layer components {
+  .shake-smooth {
+    @apply animate-shake;
+    @apply transition-all duration-200 ease-out;
+  }
+}
+
+/* Кастомные keyframes */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+  20%, 40%, 60%, 80% { transform: translateX(2px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.8); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Анимации для float эффектов */
+@layer components {
+  .float-smooth {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .glow-smooth {
+    animation: glow 2s ease-in-out infinite;
+  }
+  
+  .pulse-slow {
+    animation: pulse-slow 2s ease-in-out infinite;
+  }
+}
+

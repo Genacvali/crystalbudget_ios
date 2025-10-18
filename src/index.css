@@ -1,3 +1,5 @@
+@import './styles/animations.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,14 +7,6 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
-
-/* iOS Safe Area Variables */
-:root {
-  --sat: env(safe-area-inset-top);
-  --sar: env(safe-area-inset-right);
-  --sab: env(safe-area-inset-bottom);
-  --sal: env(safe-area-inset-left);
-}
 
 @layer base {
   :root {
@@ -135,25 +129,5 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-  }
-}
-
-/* iOS специфичные стили */
-@supports (-webkit-touch-callout: none) {
-  /* Только для iOS Safari/WebKit */
-  body {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-  }
-  
-  input, textarea, select {
-    -webkit-user-select: text;
-  }
-  
-  /* Убрать bouncing эффект на iOS */
-  html, body {
-    overscroll-behavior: none;
-    -webkit-overflow-scrolling: touch;
   }
 }

@@ -24,8 +24,8 @@ export function Layout({
             <div className="flex items-center gap-2 sm:gap-4 min-w-0">
               <MobileNav selectedDate={selectedDate} onDateChange={onDateChange} />
               <div className="hidden xl:flex xl:items-center xl:gap-2">
-                <img src={crystalLogo} alt="Crystal" className="w-8 h-8" />
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <img src={crystalLogo} alt="Crystal" className="w-8 h-8 hover-scale icon-smooth" />
+                <h1 className="text-2xl font-bold text-gradient-smooth hover-lift">
                   CrystalBudget
                 </h1>
               </div>

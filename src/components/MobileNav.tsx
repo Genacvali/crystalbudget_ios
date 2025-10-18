@@ -6,6 +6,8 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 import { cn } from "@/lib/utils";
 import { navItems } from "./Navigation";
 import { MonthSelector } from "./MonthSelector";
+import { ActionSheet } from "./ActionSheet";
+import { SwipeToClose } from "./SwipeToClose";
 import crystalLogo from "@/assets/crystal-logo.png";
 interface MobileNavProps {
   selectedDate: Date;
@@ -17,38 +19,55 @@ export function MobileNav({
 }: MobileNavProps) {
   const [open, setOpen] = useState(false);
   const location = useLocation();
-  return <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="xl:hidden mx-0 px-[24px]">
-          <Menu className="h-5 w-5" />
-        </Button>
-      </SheetTrigger>
-      <SheetContent side="left" className="w-64">
-        <SheetHeader>
-          <SheetTitle>
-            <div className="flex items-center gap-2">
-              <img src={crystalLogo} alt="Crystal" className="w-7 h-7" />
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                CrystalBudget
-              </span>
+  
+  return (
+    <ActionSheet isOpen={open} onOpenChange={setOpen}>
+      <SwipeToClose isOpen={open} onClose={() => setOpen(false)}>
+        <Sheet open={open} onOpenChange={setOpen}>
+          <SheetTrigger asChild>
+            <Button variant="ghost" size="icon" className="xl:hidden mx-0 px-[24px]">
+              <Menu className="h-5 w-5" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="w-64">
+            <SheetHeader>
+              <SheetTitle>
+                <div className="flex items-center gap-2">
+                  <img src={crystalLogo} alt="Crystal" className="w-7 h-7" />
+                  <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                    CrystalBudget
+                  </span>
+                </div>
+              </SheetTitle>
+            </SheetHeader>
+            <nav className="mt-8 flex flex-col gap-2">
+              {navItems.map(item => {
+                const Icon = item.icon;
+                const isActive = location.pathname === item.path;
+                return (
+                  <Link 
+                    key={item.path} 
+                    to={item.path} 
+                    onClick={() => setOpen(false)} 
+                    className={cn(
+                      "flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 hover:scale-[1.02]", 
+                      isActive ? "bg-primary text-primary-foreground shadow-md" : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                    )}
+                  >
+                    <Icon className="h-5 w-5" />
+                    <span>{item.label}</span>
+                  </Link>
+                );
+              })}
+            </nav>
+            
+            <div className="mt-6 px-4 space-y-2">
+              <p className="text-xs font-medium text-muted-foreground mb-2">Выбор периода</p>
+              <MonthSelector selectedDate={selectedDate} onDateChange={onDateChange} />
             </div>
-          </SheetTitle>
-        </SheetHeader>
-        <nav className="mt-8 flex flex-col gap-2">
-          {navItems.map(item => {
-          const Icon = item.icon;
-          const isActive = location.pathname === item.path;
-          return <Link key={item.path} to={item.path} onClick={() => setOpen(false)} className={cn("flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors", isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground hover:bg-secondary")}>
-                <Icon className="h-5 w-5" />
-                <span>{item.label}</span>
-              </Link>;
-        })}
-        </nav>
-        
-        <div className="mt-6 px-4 space-y-2">
-          <p className="text-xs font-medium text-muted-foreground mb-2">Выбор периода</p>
-          <MonthSelector selectedDate={selectedDate} onDateChange={onDateChange} />
-        </div>
-      </SheetContent>
-    </Sheet>;
+          </SheetContent>
+        </Sheet>
+      </SwipeToClose>
+    </ActionSheet>
+  );
 }
